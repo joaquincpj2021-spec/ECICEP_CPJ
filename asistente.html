@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoy atendiendo y necesito ayuda | Portal ECICEP CPJ V3</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="side">
+<div class="brand"><h1>Portal ECICEP CPJ V3</h1><p>Herramienta operativa multipágina para aplicar ECICEP sin perder continuidad, acuerdos ni registro.</p></div>
+<div class="navtitle">Navegación</div>
+<div class="nav">
+  <a href="index.html" class=""><span>🏠</span>Inicio</a>
+  <a href="asistente.html" class="active"><span>🧠</span>Estoy atendiendo</a>
+  <a href="mapa.html" class=""><span>🧭</span>Mapa ECICEP</a>
+  <a href="ingreso.html" class=""><span>📋</span>Ingreso integral</a>
+  <a href="control.html" class=""><span>🔄</span>Control integral</a>
+  <a href="seguimiento.html" class=""><span>📞</span>Seguimiento</a>
+  <a href="domicilio.html" class=""><span>🏡</span>Domicilio</a>
+  <a href="gestion.html" class=""><span>👥</span>Gestión de casos</a>
+  <a href="registro.html" class=""><span>📝</span>Registro y AVIS</a>
+  <a href="some.html" class=""><span>🗂️</span>SOME</a>
+  <a href="herramientas.html" class=""><span>🎯</span>Herramientas</a>
+  <a href="biblioteca.html" class=""><span>📚</span>Biblioteca</a>
+</div>
+</aside>
+<main>
+  <div class="top"><div class="hero"><div><h2>Estoy atendiendo y necesito ayuda</h2><p>Responde tres preguntas y obtén una orientación rápida para avanzar sin perder la lógica ECICEP.</p><div class="chips"><span class="chip">ECICEP</span><span class="chip">MAIS</span><span class="chip">APS</span><span class="chip">Plan consensuado</span><span class="chip">Registro útil</span></div></div><div class="hero-card"><b>Uso recomendado</b><ul><li>En box: decisión rápida.</li><li>En SOME: continuidad.</li><li>En reuniones: revisión de casos.</li><li>En capacitación: lenguaje común.</li></ul></div></div></div>
+  <div class="toolbar"><div class="toolbar-inner"><input class="search" id="search" placeholder="Buscar en esta página..."><button class="btn primary" onclick="window.print()">Imprimir / PDF</button></div></div>
+  <div class="content">
+<div class="card block"><h2>Asistente operativo ECICEP</h2><p class="lead">No reemplaza juicio clínico: ordena el siguiente paso.</p>
+<div class="formrow"><div class="field"><label>1. ¿Qué atención estás realizando?</label><select id="tipoAt"><option>Ingreso integral</option><option>Control integral</option><option>Seguimiento a distancia</option><option>Atención domiciliaria</option><option>Gestión de casos</option><option>SOME / continuidad</option></select></div><div class="field"><label>2. ¿Qué dificultad predomina?</label><select id="difAt"><option>Barreras para cumplir acuerdo</option><option>Baja comprensión del plan</option><option>Baja importancia del cambio</option><option>Baja confianza o factibilidad</option><option>Alerta clínica o social</option><option>Necesidad de registro</option><option>Inasistencia o pérdida de continuidad</option></select></div></div>
+<div class="field"><label>3. Describe en una frase el problema o foco actual</label><input id="focoAt" type="text" placeholder="Ej.: olvida medicamentos nocturnos, cuidadora sobrecargada, no entiende indicación..."></div>
+<button class="btn primary" onclick="orientar()">Orientar siguiente paso</button><div id="orientacion" class="result hidden"></div></div>
+<div class="grid block" style="margin-top:18px"><div class="card s6"><h2>Si hay barreras</h2><ul><li>Nombrar la barrera específica.</li><li>No registrar solo “no adherente”.</li><li>Ajustar el acuerdo para hacerlo más posible.</li><li>Definir seguimiento o apoyo.</li></ul></div><div class="card s6"><h2>Si hay alerta</h2><ul><li>Evaluar clínicamente.</li><li>Coordinar equipo.</li><li>Activar gestión de caso o domicilio si corresponde.</li><li>Registrar criterio y acción.</li></ul></div></div>
+<p class="mini" style="margin-top:24px">Portal ECICEP CPJ V3 · Herramienta complementaria al protocolo y manual local. No reemplaza juicio clínico ni orientaciones programáticas vigentes.</p></div>
+</main></div>
+<script src="js/app.js"></script>
+</body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de casos | Portal ECICEP CPJ V3</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="side">
+<div class="brand"><h1>Portal ECICEP CPJ V3</h1><p>Herramienta operativa multipágina para aplicar ECICEP sin perder continuidad, acuerdos ni registro.</p></div>
+<div class="navtitle">Navegación</div>
+<div class="nav">
+  <a href="index.html" class=""><span>🏠</span>Inicio</a>
+  <a href="asistente.html" class=""><span>🧠</span>Estoy atendiendo</a>
+  <a href="mapa.html" class=""><span>🧭</span>Mapa ECICEP</a>
+  <a href="ingreso.html" class=""><span>📋</span>Ingreso integral</a>
+  <a href="control.html" class=""><span>🔄</span>Control integral</a>
+  <a href="seguimiento.html" class=""><span>📞</span>Seguimiento</a>
+  <a href="domicilio.html" class=""><span>🏡</span>Domicilio</a>
+  <a href="gestion.html" class="active"><span>👥</span>Gestión de casos</a>
+  <a href="registro.html" class=""><span>📝</span>Registro y AVIS</a>
+  <a href="some.html" class=""><span>🗂️</span>SOME</a>
+  <a href="herramientas.html" class=""><span>🎯</span>Herramientas</a>
+  <a href="biblioteca.html" class=""><span>📚</span>Biblioteca</a>
+</div>
+</aside>
+<main>
+  <div class="top"><div class="hero"><div><h2>Gestión de casos</h2><p>Acompañamiento estrecho y coordinación cuando existe riesgo, barreras persistentes o pérdida de continuidad.</p><div class="chips"><span class="chip">ECICEP</span><span class="chip">MAIS</span><span class="chip">APS</span><span class="chip">Plan consensuado</span><span class="chip">Registro útil</span></div></div><div class="hero-card"><b>Uso recomendado</b><ul><li>En box: decisión rápida.</li><li>En SOME: continuidad.</li><li>En reuniones: revisión de casos.</li><li>En capacitación: lenguaje común.</li></ul></div></div></div>
+  <div class="toolbar"><div class="toolbar-inner"><input class="search" id="search" placeholder="Buscar en esta página..."><button class="btn primary" onclick="window.print()">Imprimir / PDF</button></div></div>
+  <div class="content">
+<div class="card block"><h2>Semáforo de gestión</h2><div class="semaforo"><div class="sem green"><h3>Cuidado habitual</h3><ul><li>Plan claro.</li><li>Comprensión suficiente.</li><li>Sin alertas.</li></ul></div><div class="sem yellow"><h3>Considerar gestión</h3><ul><li>Barreras persistentes.</li><li>Controles desordenados.</li><li>Necesita coordinación.</li></ul></div><div class="sem red"><h3>Activar gestión</h3><ul><li>Descompensación.</li><li>Alta vulnerabilidad.</li><li>Riesgo de abandono.</li><li>Cuidador/a sobrecargado/a.</li></ul></div></div></div>
+<div class="card block" style="margin-top:18px"><h2>Evaluador rápido</h2><ul class="check"><li><input class="risk" type="checkbox"><span>Alta vulnerabilidad clínica o social.</span></li><li><input class="risk" type="checkbox"><span>Múltiples barreras para sostener el plan.</span></li><li><input class="risk" type="checkbox"><span>Descompensaciones o uso reiterado de urgencia.</span></li><li><input class="risk" type="checkbox"><span>Riesgo de abandono o inasistencias reiteradas.</span></li><li><input class="risk" type="checkbox"><span>Cuidador/a con sobrecarga o red insuficiente.</span></li></ul><button class="btn primary" onclick="calcRisk()">Calcular orientación</button><div id="riskOut" class="result hidden"></div></div>
+<div class="card block" style="margin-top:18px"><h2>Etapas mínimas</h2><table><tr><th>Etapa</th><th>Acción</th><th>Resultado esperado</th></tr><tr><td>Ingreso</td><td>Definir foco de gestión y riesgo principal.</td><td>Motivo claro.</td></tr><tr><td>Planificación</td><td>Ordenar acciones, responsables y plazos.</td><td>Equipo alineado.</td></tr><tr><td>Seguimiento</td><td>Monitorear avances, barreras y alertas.</td><td>Plan vivo.</td></tr><tr><td>Egreso</td><td>Verificar estabilidad, claridad y continuidad habitual.</td><td>Retorno ordenado.</td></tr></table></div>
+<p class="mini" style="margin-top:24px">Portal ECICEP CPJ V3 · Herramienta complementaria al protocolo y manual local. No reemplaza juicio clínico ni orientaciones programáticas vigentes.</p></div>
+</main></div>
+<script src="js/app.js"></script>
+</body></html>
